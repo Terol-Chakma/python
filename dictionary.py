@@ -28,6 +28,25 @@ Student = {     #dict-1
     # ................
     # ................
 }
-#print(Student)  #All
-#print(Student["Subjects"])  # only all subjects from student
-print(Student["Subjects"]["CN"])
+
+print(Student)  #All
+print(Student["Subjects"])  # only all subjects from student
+print(Student["Subjects"]["CN"])    # Only the value of CN
+
+# dictionary methoids
+Student.keys()  #returns all keys
+print(Student.keys())   #all keys will return
+print(list(Student.keys()))  #type casting
+
+Student.values()    #returns all values
+Student.items()    #returns all (key : value) pairs as tuple ()
+print(Student.items())
+
+Student.get("Name")    #returns the key according to value
+print(Student.get("Name"))
+
+#Student.update({"#new dict"})
+Student.update({"City" : "Durgapur"})
+print(Student)
+
+# in case of get() is there in no exixting keys the output will be null

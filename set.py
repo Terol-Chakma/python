@@ -35,6 +35,6 @@ print(marks)
 
 #Q2. figure out a way to store 9 and 9.0 as separate values in the set
 values = {
-    ("floate",9.0),("int",9)
+    ("floate",9.0),("int",9) # built in datatype
 }
 print(values)
